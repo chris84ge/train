@@ -2,19 +2,12 @@
   include 'head.php';
   if(filter_has_var(INPUT_POST, 'submit')){
     $name = $_POST['name'];
-    $email = $_POST['name'];
+    $email = $_POST['email'];
     if(strlen($name)>10){
       $msg = "$name is a long name!";
     } else {
       $msg = "$name is a regular name";
     }
-  }
-
-  if(isset($_POST['more'])){
-    session_start();
-    $_SESSION['name'] = $name;
-    $_SESSION['email'] = $email;
-    header('Location: page2.php');
   }
 
   if(filter_has_var(INPUT_POST, 'reset')){
@@ -35,9 +28,6 @@
       <input type="text" name="email" id="email" ><br>
       <input type="submit" name="submit">
       <input type="submit" name="reset" value="Reset">
-      <?php if(filter_has_var(INPUT_POST, 'submit')): ?>
-        <input type="submit" name="more" value="Click here for more">
-      <?php endif; ?>
     </form><br>
     <?php if(filter_has_var(INPUT_POST, 'submit')): ?>
     <section>
