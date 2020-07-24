@@ -1,0 +1,59 @@
+@media only screen and (max-width: 750px) {
+    .descr {
+        padding: 20em 2em 2em 2em;
+        text-align: center;
+    }
+    .space {
+        transition: 3s;
+        background-size: 9em;
+        background-position-y: 19%;
+    }
+    .descr{
+        font-size: 1em;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .descr {
+        padding: 20em 2em 2em 2em;
+        text-align: center;
+    }
+    .space {
+        background-size: 9em;
+        background-position-y: 19%;
+    }
+  }
+
+  @media only screen and (max-width: 240px) {
+    .descr {
+        display: none;
+    }
+    .smallS {
+        display: block;
+        padding: 20em 2em 2em 2em;
+        text-align: center;
+    }
+    .space {
+        background-size: 9em;
+        top: 130px;
+        background-position-y: 19%;
+    }
+    .navbar {
+        display: inline-block;
+    }
+  }
+
+  @media only screen and (max-height: 890px) {
+      .first, .second {
+          background-image: none;
+      }
+      .descr {
+        padding: 5em 5em 5em 5em;
+        text-align: center;
+        font-size: 1.1em;
+      }
+      .space {
+          top: 40px;
+          height: 50vh;
+      }
+  }
